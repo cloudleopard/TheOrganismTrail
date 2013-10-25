@@ -28,7 +28,10 @@ operons = {'CO2 Diffusion': Operon('CO2 Diffusion', 1000000, 'pas', 'CO2'),
            'Cl- channel': Operon('Cl- channel', 500, 'pas', 'Cl-'),
            'Aerobic respiration': Operon('Aerobic respiration', 1000, 'rxn', reactions['Aerobic respiration']),
            'Photosynthesis': Operon('Photosynthesis', 1000, 'rxn', reactions['Photosynthesis']),
-           'DNA Polymerase': Operon('DNA Polymerase', 1000, 'misc', 'DNAPol')}
+           'DNA Polymerase': Operon('DNA Polymerase', 1000, 'misc', 'DNAPol'),
+           'Motility': Operon('Motility', 1000, 'misc', 'motility'),
+           'Antibiotic Production': Operon('Antibiotic Production', 1000, 'rxn', 'antibiotics'),
+           'Antibiotic Resistance': Operon('Antibiotic Resistance', 1000, 'rxn', 'antibiotics')}
 
 genome = Genome(operons.values())
 
